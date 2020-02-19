@@ -4,7 +4,7 @@ before_install:
   - docker version
 
 script:
-- bundle exec rake test
+- echo "run docker build"
 - docker build -t netcore-nodejs-chromenium -f Dockerfile
 deploy:
   provider: script
