@@ -5,7 +5,7 @@ before_install:
 
 script:
 - echo "run docker build"
-- docker build -t netcore-nodejs-chromenium -f Dockerfile
+- docker build -t samuraitruong/netcore-nodejs-chromium Dockerfile
 deploy:
   provider: script
   script: bash docker_push
